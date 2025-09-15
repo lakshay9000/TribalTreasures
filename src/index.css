@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans leading-relaxed;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-white hover:text-yellow-300 transition-colors;
+  }
+  
+  .cta-button {
+    @apply bg-amber-700 text-white border-none px-8 py-4 text-lg rounded-full cursor-pointer 
+           transition-colors hover:bg-amber-900 mt-4;
+  }
+  
+  .product-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-1;
+  }
+  
+  .tribe-card {
+    @apply relative rounded-lg overflow-hidden h-[300px];
+  }
+}
